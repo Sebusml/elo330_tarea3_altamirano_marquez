@@ -43,8 +43,6 @@ pthread_mutex_t		 lock_buff_cts = PTHREAD_MUTEX_INITIALIZER;
 pthread_mutex_t 	 lock_buff_stc = PTHREAD_MUTEX_INITIALIZER;
 pthread_cond_t     cond_buff_cts = PTHREAD_COND_INITIALIZER;
 pthread_cond_t     cond_buff_stc = PTHREAD_COND_INITIALIZER;
-int 							 buff_cs_stat;
-int								 buff_sc_stat;
 
 /*Descriptores de archivos para pipas*/
 int buff_data_cs[2];
@@ -52,7 +50,7 @@ int buff_data_sc[2];
 int buff_time_cs[2];
 int buff_time_sc[2];
  
-/*Funciones de inicializacion*/
+/*Funciones de inicializacion y varias*/
 void init(int argc,char *argv[]);
 void open_sockets(void);
 void thread_start(pthread_t *);

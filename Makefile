@@ -1,7 +1,7 @@
 CC=gcc
 CFLAGS=-pthread -lrt
 OBJECTS=erp_upd.o
-OUT=erp_exe
+OUT=erp_udp
 
 default: $(OBJECTS)
 	$(CC) $(OBJECTS) -o $(OUT) $(CFLAGS) 
