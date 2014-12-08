@@ -1,0 +1,25 @@
+Revisión del ayudante:
+Gabriela Altamirano y Sebastián Márquez
+
+Documentación (30%):				100
+Compilación (10%):					100
+Ejecución (60%):
+* Conexión Cliente-servidor (20%):	100
+* Implementación del retardo (30%):	60
+* Implementación del error (10%):	100
+-----------------------------
+Total:								
+
+MÉTODO DE PRUEBA
+* Se usó la aplicación de prueba disponible aquí: https://github.com/VirusRushTheater/erp_udp_prueba
+
+------------------------------------------------------------------------------
+Comentarios:
+* Estoy intentando con varios retardos y porcentajes de pérdidas. No logro hacer de que el retardo funcione. Probablemente eso se deba a bugs con la función "usleep". Dado que es difícil debuggear programas multi-hebras, me gustaría ver si lo pueden hacer funcionar en otra parte, por lo que no sabría a ciencia cierta si es problema de su código o mi PC. Como mi programa de pruebas funciona con QT se me haría imposible probarlo en Aragorn.
+
+Sugerencias:
+* Me gustó bastante el diseño modular que siguieron en el Main, y en general, la estrategia de programación que siguieron.
+* Hay algunos errores de identación (algunos con dos espacios y otros con tabulaciones), pero no es para nada grave.
+* Fue muy buena idea usar pipes, sin embargo, en el caso de un proyecto más grande (como en C++) hay que ser cuidadoso en ese sentido para hacer el código más portable.
+* Cuidado, traten de evitar usar variables cuyos nombres terminen en "_t", como "id_t". En el caso de que incluyan otras cabeceras de la GLIBC pueden tener problemas. Geany me lo reconoce como tipo de dato.
+* Eché de menos una explicación de los argumentos a usar, sea en la documentación o el mismo programa.
